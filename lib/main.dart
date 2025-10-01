@@ -12,11 +12,12 @@ void main() async {
 
   // Initialize Supabase
   await Supabase.initialize(
-    url: dotenv.env['SUPABASE_URL']!,
-    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
+    url: 'https://gohbwtuprcqrftzchral.supabase.co',
+    anonKey:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdvaGJ3dHVwcmNxcmZ0emNocmFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwNzUxNDcsImV4cCI6MjA3NDY1MTE0N30.nWDbk9uYaL61Ddu375npIdYSrraqn7kooJDm30ZDlnU',
   );
 
-  // Initialize local database
+  // Initialize local database`
   await LocalDatabaseService.database;
 
   runApp(MyApp());
